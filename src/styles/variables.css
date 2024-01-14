@@ -1,0 +1,33 @@
+:root {
+  /* Cores principais */
+  --cor-fundo-geral: #1a1a1a;
+  --cor-texto: #ffffff;
+  --cor-texto-claro: #cccccc;
+  --cor-borda: #666666;
+
+  --newbie: rgb(106, 190, 205);;
+  --junior: rgb(170, 215, 66);
+  --intermediate: rgb(241, 182, 4);
+  --advanced: rgb(244, 137, 37);
+  --guru: rgb(237, 44, 73);
+}
+
+.newbie {
+  color: var(--newbie);
+}
+
+.junior {
+  color: var(--junior);
+}
+
+.intermediate {
+  color: var(--intermediate);
+}
+
+.advanced {
+  color: var(--advanced);
+}
+
+.guru {
+  color: var(--guru);
+}

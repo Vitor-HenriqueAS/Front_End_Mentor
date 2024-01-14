@@ -1,0 +1,130 @@
+:root {
+    --soft-blue-text: hsl(215, 51%, 70%);
+    --cyan-price: hsl(178, 100%, 50%);
+    --very-dark-blue-bg-main: hsl(217, 54%, 11%);
+    --very-dark-blue-bg-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.color-white {color: var(--white); cursor: pointer;}
+.color-blue-text {color: var(--soft-blue-text); font-weight: 200;}
+.color-cyan-price {color: var(--cyan-price);}
+
+body {
+    background-color: var(--very-dark-blue-bg-main);
+    font-family: 'Outfit', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--very-dark-blue-bg-card);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card {
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 0.384);
+    opacity: 0;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-overlay img {
+    width: 50px; 
+    height: 50px;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+}
+
+.container .title {
+    font-size: 20px;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+.container .text {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 16px;
+}
+
+.price li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price .eth {
+    font-weight: 600;
+}
+
+.line {
+    display: flex;
+    height: 1px;
+    width: auto;
+    margin-bottom: 10px;
+    background-color: var(--very-dark-blue-line);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.img-avatar {
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.hover-cyan {
+    transition: .3s ease-in-out;
+}
+
+.hover-cyan:hover {
+    color: var(--cyan-price);
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--white);}
+.attribution a { color: var(--cyan-price);}
+.attribution a:hover { text-decoration: underline;}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Front End Mentor</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/globals.css">
+  <link rel="stylesheet" href="src/styles/variables.css">
+
+  <!-- Google Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <img src="src/assets/images/logo.jpg" alt="Logo Principal da Página">
+    <h1>Projetos Front End Mentor</h1>
+  </header>
+
+  <main>
+    <section id="parallax_about">
+      <h2>Bem Vindo aos Projetos da plataforma Front End Mentor</h2>
+      <p>
+        Aqui está organizado todos os projetos que eu desenvolvi, 
+        separados pelos mais recentes, mais antigos e pela dificuldade. 
+        Veja como eu me sai pelos desafios propostos pela plataforma!
+      </p>
+    </section>
+
+    <section id="projects">
+      <div id="projects_header">
+        <h2>Projetos</h2>
+
+        <label for="ordenacao">Ordenar por:</label>
+        <select id="ordenacao" name="ordenacao">
+          <option value="recentes" checked>Mais Recentes</option>
+          <option value="antigos">Mais Antigos</option>
+          <option value="dificuldade">Dificuldade</option>
+        </select>
+      </div>
+      
+      <div id="projects_content">
+        <!-- Carrega os Cards pelo JS index.mjs -->
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <span>
+      Desenvolvido por&nbsp;<a href="#">Vitor Henrique </a>&nbsp;| &copy; 2024 Todos os direitos reservados
+    </span>
+  </footer>
+</body>
+<script type="module" src="src/scripts/index.mjs"></script>
+
+</html>

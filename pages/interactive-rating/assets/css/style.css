@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --very-dark-blue: hsl(228, 11%, 9%);
+    --dark-blue: hsl(215, 22%, 15%);
+    --medium-dark-blue: hsl(210, 19%, 18%);
+    --orange: hsl(25, 97%, 53%);
+    --light-orange: hsl(25, 65%, 55%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    max-width: 400px;
+    padding: 30px;
+    display: none;
+    border-radius: 25px;
+}
+
+.card.thank-you {
+    text-align: center;
+}
+
+.visible {
+    display: block;
+}
+
+.card .star {
+    background-color: var(--medium-dark-blue);
+		max-width: fit-content;
+		padding: 10px;
+    border-radius: 50%;
+
+		transition: 0.5s ease-in-out;
+		border: 1px solid transparent;
+}
+
+.card .star:hover {
+	border: 1px solid var(--white);
+}
+
+.star .star-icon {
+	width: 16px;
+	height: 16px;
+	background-color: var(--orange);
+
+	mask: url("../images/icon-star.svg") 100% no-repeat;
+	-webkit-mask: url("../images/icon-star.svg") 100% no-repeat;
+}
+
+.star:hover .star-icon {
+	animation: star 5s infinite;
+}
+
+@keyframes star {
+	0%   { background-color: hsl(25, 97%, 53%);transform: rotateZ(1deg);}
+	25%  { background-color: hsl(25, 89%, 44%);}
+	50%  { background-color: hsl(25, 52%, 65%);}
+	75%  { background-color: hsl(25, 71%, 36%);}
+	100% { background-color: hsl(25, 97%, 53%);transform: rotateZ(360deg);}
+}
+
+.card .rating {
+    color: var(--light-orange);
+    background-color: var(--medium-dark-blue);
+    padding: 10px;
+    margin: 20px auto;
+    width: max-content;
+    border-radius: 15px;
+}
+
+.card .title {
+    color: var(--white);
+    margin: 30px 0 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card .text {
+    color: var(--light-grey);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.card .rating-btn {
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+}
+
+.card .rating-btn li {
+    margin: 30px 0;
+}
+
+.card .rating-btn li a{
+    background-color: var(--medium-dark-blue);
+    color: var(--light-grey);
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 2.5rem;
+    transition: all 0.5s;
+  }
+
+.card .rating-btn li a:hover {
+    background-color: var(--medium-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card .rating-btn li a.is-selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.card button {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    transition: .3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.attribution { font-size: 12px; color: var(--white); margin-top: 20px;}
+.attribution a { color: var(--orange); }
+.attribution a:hover { color: var(--light-orange); text-decoration: underline;}

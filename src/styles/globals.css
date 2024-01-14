@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: var(--cor-texto);
+}
+
+p, span, label {
+  color: var(--cor-texto-claro);
+}
+
+select {
+  padding: 2px 15px;
+  border-radius: 10px 10px 5px 5px;
+}
+
+body {
+  background-color: var(--cor-fundo-geral);
+}
+
+header {
+  background-color: var(--cor-fundo-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #ffffffb5;
+}
+
+#parallax_about {
+  position: relative;
+  max-width: 1920px;
+  height: 400px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#parallax_about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../assets/images/parallax.jpg");
+  opacity: 0.7;
+}
+
+#parallax_about h2, #parallax_about p {
+  position: relative;
+  z-index: 1;
+  padding: 0 20%;
+}
+
+#projects_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 30px 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+#projects_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 50px;
+}
+
+#projects_content img {
+  width: 450px;
+  height: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.project {
+  text-transform: uppercase;
+  border: 1px solid #ffffffb5;
+  border-radius: 5px;
+}
+
+.project h3, .project span {
+  padding: 5px 10px;
+}
+
+.project_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.project_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.project_links span a {
+  color: rgb(238, 238, 66);
+  padding: 2px 15px;
+  text-decoration: none;
+  border: 2px solid rgb(132, 132, 25);
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+}
+
+.project_links span a:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+footer span {
+  color: var(--cor-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #fff;
+  padding: 50px 0;
+}
+
+footer a {
+  color: var(--newbie);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 350px;
+        height: 650px;
+        flex-direction: column;
+    }
+
+    .img-perfume {
+        width: 350px;
+        height: 250px;
+    }
+    .img-perfume.desktop {
+        display: none;
+    }
+    .img-perfume.mobile {
+        display: block;
+    }
+    
+    .description {
+        margin: 32px 30px;
+    }
+}

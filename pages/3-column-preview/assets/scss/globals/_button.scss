@@ -1,0 +1,29 @@
+button {
+    background-color: var(--very-light-gray-bg-hd-btn);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 12px 30px;
+
+    font-size: 15px;
+    font-family:  'Lexend Deca', sans-serif;
+    transition: .5s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray-bg-hd-btn);
+    border: 2px solid var(--very-light-gray-bg-hd-btn);
+    cursor: pointer;
+}
+
+.btn1 {
+    color: var(--bright-orange);
+}
+
+.btn2 {
+    color: var(--dark-cyan);
+}
+
+.btn3 {
+    color: var(--very-dark-cyan);
+}

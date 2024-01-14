@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    background-color: var(--pale-blue);
+}
+
+body {
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    background-color: #fff;
+    max-width: 21.875em;
+    border-radius: 1.25em;
+    overflow: hidden;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.description {
+    width: 100%;
+    padding: 1.875em 1.25em;
+    text-align: center;
+}
+
+.description .title {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.description .text {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: .625em;
+    color: var(--desaturated-blue);
+}
+
+.description .plan {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+    font-size: 1rem;
+    padding: 1.25em;
+    margin: 1.875em 0;
+    border-radius: .625em;
+    width: 100%;
+}
+
+.plan img {
+    width: 2.5em;
+}
+
+.plan .title {
+    font-size: .9375rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.plan .price {
+    color: var(--desaturated-blue);
+    font-size: .9375rem;
+}
+
+.plan .btn-change {
+    font-size: .75rem;
+    font-weight: 700;
+    margin-left: 3.125em;
+    text-decoration: underline;
+    color: var(--bright-blue);
+    transition: .3s ease-in-out;
+}
+
+.plan .btn-change:hover {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.description .btn-payment {
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    font-size: .9375rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+    padding: .625em;
+    width: 100%;
+
+    border: 1px solid transparent;
+    border-radius: .625em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: .5s ease-in-out;
+}
+
+.description .btn-payment:hover {
+    background-color: transparent;
+    color: var(--bright-blue);
+    border: 1px solid var(--bright-blue);
+    box-shadow: rgba(141, 141, 146, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.description .btn-cancel {
+    color: var(--desaturated-blue);
+    font-size: .75rem;
+    font-weight: 700;
+    border-radius: 1.25em;
+    transition: .5s ease-in-out;
+}
+
+.description .btn-cancel:hover {
+    color: var(--bright-blue);
+    font-weight: 900;
+}
+
+.btn-payment, .btn-cancel, .btn-change {
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; margin-top: 20px;}
+.attribution a { color: hsl(0, 87%, 33%); text-decoration: none;}
+.attribution a:hover { text-decoration: underline; cursor: pointer;}
