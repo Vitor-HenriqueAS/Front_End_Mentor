@@ -1,5 +1,7 @@
 # Frontend Mentor - Product preview card component solution
 
+🔗 [HOME](https://github.com/Vitor-HenriqueAS/Front_End_Mentor)
+
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -26,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Vitor-HenriqueAS/product-preview-card-component-main
-- Live Site URL: https://vitor-henriqueas.github.io/product-preview-card-component-main/
+- Solution URL: https://github.com/Vitor-HenriqueAS/Front_End_Mentor/tree/main/pages/product-preview-card
+- Live Site URL: https://vitor-henriqueas.github.io/Front_End_Mentor/pages/product-preview-card/index.html
 
 
 ## Author
