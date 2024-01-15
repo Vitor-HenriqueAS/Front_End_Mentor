@@ -16,4 +16,4 @@ Este é um projeto simples criado para organizar desafios concluídos da platafo
 
 ## Visualização do Site
 
-🌐 [Veja o Site em Ação](https://vitor-henriqueas.github.io/Front_End_Mentor/)
+🌐 [Veja o Site em Ação](https://vitor-henriqueas.github.io/Front_End_Mentor/){:target="_blank"}
