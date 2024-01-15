@@ -44,19 +44,21 @@ function loadCardsProjects() {
     <div class="project">
       <img src="src/assets/images/projetos/${project.image}.webp" alt="${project.name}">
       
-      <div class="project_header">
-        <h3>${project.image}</h3>
-        <span>${project.date}</span>
-      </div>
+      <div class="project_info">
+        <div class="project_header">
+          <h3>${project.image}</h3>
+          <span>${project.date}</span>
+        </div>
 
-      <div class="project_details">
-        <span class="${project.level}">${project.level}</span>
-        <span>${project.languages}</span>
-      </div>
+        <div class="project_details">
+          <span class="${project.level}">${project.level}</span>
+          <span>${project.languages}</span>
+        </div>
 
-      <div class="project_links">
-        <span><a href="${project.deploy}" target="_blank">Deploy</a></span>
-        <span><a href="${project.code}" target="_blank">Repositório</a></span>
+        <div class="project_links">
+          <span><a href="${project.deploy}" target="_blank">Deploy</a></span>
+          <span><a href="${project.code}" target="_blank">Repositório</a></span>
+        </div>
       </div>
     </div>
     `

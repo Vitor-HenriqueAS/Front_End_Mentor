@@ -3,11 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: var(--cor-texto);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 p, span, label {
@@ -23,50 +32,56 @@ body {
   background-color: var(--cor-fundo-geral);
 }
 
-header {
-  background-color: var(--cor-fundo-header);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 20px 0;
-}
-
-header img {
-  width: 80px;
-  height: 80px;
+#parallax_about img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 1px solid #ffffffb5;
 }
 
-#parallax_about {
-  position: relative;
-  max-width: 1920px;
-  height: 400px;
-  overflow: hidden;
+#parallax_about p {
+  font-size: 1.5rem;
+}
 
+#parallax_about h1, #parallax_about p {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 0 15%;
+}
+
+.module.parallax {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-}
+  gap: 3em;
 
-#parallax_about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("../assets/images/parallax.jpg");
-  opacity: 0.7;
-}
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
 
-#parallax_about h2, #parallax_about p {
+  overflow: hidden;
   position: relative;
+  background: url("../assets/images/parallax.jpg") 50% 50% no-repeat fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.module.parallax:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
   z-index: 1;
-  padding: 0 20%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 40%,
+    rgb(0, 0, 0, 0.8) 100%
+  );
 }
 
 #projects_header {
@@ -81,6 +96,8 @@ header img {
 }
 
 #projects_content {
+  background: rgb(213,114,92);
+  background: radial-gradient(circle, rgba(213,114,92,1) 0%, rgba(45,45,45,1) 100%);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -90,20 +107,28 @@ header img {
 }
 
 #projects_content img {
-  width: 450px;
+  background-color: #ffffffb5;
+  width: 350px;
   height: 300px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .project {
   text-transform: uppercase;
-  border: 1px solid #ffffffb5;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.project_info{
+  background-color: #2d2d2d;
+  margin-top: -3.6px;
 }
 
 .project h3, .project span {
-  padding: 5px 10px;
+  padding: 10px;
 }
 
 .project_header {
@@ -143,10 +168,12 @@ header img {
 footer span {
   color: var(--cor-texto);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   border-top: 2px solid #fff;
-  padding: 50px 0;
+  padding: 35px 10px;
 }
 
 footer a {
