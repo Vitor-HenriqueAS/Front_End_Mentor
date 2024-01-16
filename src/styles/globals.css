@@ -120,6 +120,11 @@ body {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
+  transition: .3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.03);
 }
 
 .project_info{
@@ -142,6 +147,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 15px;
+}
+
+.levels {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .project_links {

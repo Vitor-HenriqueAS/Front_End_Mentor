@@ -14,20 +14,65 @@
 
 .newbie {
   color: var(--newbie);
+  border: 1px solid var(--newbie);
+  border-radius: 0 10px 10px 0;
+}
+
+.newbie_num {
+  color: #2d2d2d;
+  background-color: var(--newbie);
+  border: 1px solid var(--newbie);
+  border-radius: 10px 0 0 10px;
 }
 
 .junior {
   color: var(--junior);
+  border: 1px solid var(--junior);
+  border-radius: 0 10px 10px 0;
+}
+
+.junior_num {
+  color: #2d2d2d;
+  background-color: var(--junior);
+  border: 1px solid var(--junior);
+  border-radius: 10px 0 0 10px;
 }
 
 .intermediate {
   color: var(--intermediate);
+  border: 1px solid var(--intermediate);
+  border-radius: 0 10px 10px 0;
+}
+
+.intermediate_num {
+  color: #2d2d2d;
+  background-color: var(--intermediate);
+  border: 1px solid var(--intermediate);
+  border-radius: 10px 0 0 10px;
 }
 
 .advanced {
   color: var(--advanced);
+  border: 1px solid var(--advanced);
+  border-radius: 0 10px 10px 0;
+}
+
+.advanced_num {
+  color: #2d2d2d;
+  background-color: var(--advanced);
+  border: 1px solid var(--advanced);
+  border-radius: 10px 0 0 10px;
 }
 
 .guru {
   color: var(--guru);
+  border: 1px solid var(--guru);
+  border-radius: 0 10px 10px 0;
+}
+
+.guru_num {
+  color: #2d2d2d;
+  background-color: var(--guru);
+  border: 1px solid var(--guru);
+  border-radius: 10px 0 0 10px;
 }

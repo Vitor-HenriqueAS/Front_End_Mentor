@@ -17,7 +17,7 @@ function compareByDate(a, b) {
 
 function compareByLevel(a, b) {
   const levels = ['guru', 'advanced', 'intermediate', 'junior', 'newbie'];
-  return levels.indexOf(a.level) - levels.indexOf(b.level);
+  return levels.indexOf(a.level[0]) - levels.indexOf(b.level[0]);
 }
 
 function loadCardsProjects() {
@@ -51,7 +51,10 @@ function loadCardsProjects() {
         </div>
 
         <div class="project_details">
-          <span class="${project.level}">${project.level}</span>
+          <div class="levels">
+            <span class="${project.level[0]}_num">${project.level[1]}</span>
+            <span class="${project.level[0]}">${project.level[0]}</span>
+          </div>
           <span>${project.languages}</span>
         </div>
 
