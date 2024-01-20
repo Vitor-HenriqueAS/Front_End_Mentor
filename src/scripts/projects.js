@@ -1,7 +1,16 @@
 const projects = [
   {
+    "image":"profile-card-component",
+    "name":"Profile Card",
+    "date":"19/01/2024",
+    "level":["newbie", "1"],
+    "languages": "html / css",
+    "deploy":"pages/profile-card-component/index.html",
+    "code":"https://github.com/Vitor-HenriqueAS/Front_End_Mentor/tree/main/pages/profile-card-component",
+  },
+  {
     "image":"interactive-rating",
-    "name":"Interactive rating component",
+    "name":"Interactive Rating",
     "date":"30/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css / js",
@@ -10,7 +19,7 @@ const projects = [
   },
   {
     "image":"order-summary",
-    "name":"Order summary component",
+    "name":"Order Summary",
     "date":"16/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css",
@@ -19,7 +28,7 @@ const projects = [
   },
   {
     "image":"3-column",
-    "name":"3 Column preview card component",
+    "name":"3 Column",
     "date":"15/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css",
@@ -28,7 +37,7 @@ const projects = [
   },
   {
     "image":"qr-code",
-    "name":"QR code component",
+    "name":"QR Code",
     "date":"09/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css",
@@ -37,7 +46,7 @@ const projects = [
   },
   {
     "image":"nft-equilibrium",
-    "name":"NFT preview card component",
+    "name":"NFT Preview Card",
     "date":"07/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css",
@@ -46,7 +55,7 @@ const projects = [
   },
   {
     "image":"perfume-gabrielle",
-    "name":"Product preview card component",
+    "name":"Product Preview Card",
     "date":"06/08/2022",
     "level":["newbie", "1"],
     "languages": "html / css",

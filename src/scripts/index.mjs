@@ -46,7 +46,7 @@ function loadCardsProjects() {
       
       <div class="project_info">
         <div class="project_header">
-          <h3>${project.image}</h3>
+          <h3>${project.name}</h3>
           <span>${project.date}</span>
         </div>
 
