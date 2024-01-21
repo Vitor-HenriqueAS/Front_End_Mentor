@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![img-proj-mentor](./design/desktop-preview.jpg)
 
 ### Links
 

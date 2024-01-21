@@ -38,7 +38,6 @@ function loadCardsProjects() {
       sortedProjects = projects;
   }
 
-  console.log(sortedProjects)
   const newHtml = sortedProjects.map((project) => {
     return `
     <div class="project">
